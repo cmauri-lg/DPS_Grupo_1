@@ -127,6 +127,21 @@ const Chatbot = () => {
       return 'El campus ofrece varias opciones de alimentación, incluyendo cafeterías, restaurantes y máquinas expendedoras. Puedes encontrar más información sobre los horarios y ubicaciones en el portal estudiantil.';
     }
 
+    // Preguntas sobre viajes
+  if (viajes.some(prueba => input.includes(prueba))) {
+    return 'Cuando se trata de viajes, hay tanto que explorar y discutir, pero no estoy programado para ese tipo de respuestas';
+  }
+
+  // Preguntas sobre cosas filosoficas
+  if (filosoficas.some(prueba => input.includes(prueba))) {
+    return 'El significado de la vida es una pregunta que ha intrigado a la humanidad durante milenios, pero no estoy programado para ese tipo de respuestas ';
+  }
+
+  // Preguntas sobre gustos del chatbot
+  if (tusgustos.some(prueba => input.includes(prueba))) {
+    return 'No tengo experiencias personales como los humanos, y no estoy programado para ese tipo de respuestas';
+  }
+
     return 'Lo siento, no entendí tu pregunta. ¿Puedes ser más específico?';
   };
 
